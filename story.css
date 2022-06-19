@@ -1,0 +1,29 @@
+h1    {
+    color: white;
+    margin-left: 25px;
+}
+
+body    {
+    background-image: url(back.png);
+    margin: 0;}
+
+header table td p {
+    text-align: left;
+        color: white;
+        font-size: 30px;
+        margin-left: 50px;
+        margin-right: 25px;
+        margin-top: 0px;
+
+    }
+
+    .zisaku a{
+        color: white;
+        font-size: 30px;
+        padding: 8px 25px;
+    }
+    
+    .zisaku{
+        display: flex;
+        justify-content: center;
+    }
