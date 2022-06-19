@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+
+/*　画像のマスク　*/
+
+.mask{
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+}
+
+header h2 video   {
+    width:100%;/*ここを100％にしないとリンクの当たり判定がおかしくなる。サイズや位置はzoomInの方*/
+    height: auto;
+
+
+}
+
+.zoomIn{/*サイズや位置をいじるならここ*/
+    width: 750px;
+    margin: 0 auto;/*中央揃え*/
+    margin-left: 100px;
+    border: 5px solid #ff4500;/*画像に枠付け*/
+}
+
+body    {
+    background-image: url(back.png);
+    margin: 0;
+    
+
+
+}
+
+
+h1    {
+    color: white;
+    margin-left: 25px;
+}
+
+header h2 p    {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-left: 70px;
+    line-height:30px;/*行間指定*/
+
+}
+
+table ul {/*画像を横並びにする*/
+    display: flex;
+    justify-content: center;
+  }
+
+  .zoomIn2{/*サイズや位置をいじるならここ*/
+    width: 750px;
+    margin: 0 auto;/*中央揃え*/
+    margin-left: 530px;
+    border: 5px solid #ff4500;/*画像に枠付け*/
+}
+
+.zisaku a{
+    color: white;
+    font-size: 30px;
+    padding: 8px 25px;
+}
+
+.zisaku{
+    display: flex;
+    justify-content: center;
+}
