@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*　画像の拡大　*/
+
+.zoomIn img{
+	transform: scale(1);
+	transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+
+.zoomIn a:hover img{/*hoverした時の変化*/
+	transform: scale(1.2);/*拡大の値を変更したい場合はこの数値を変更*/
+}
+
+/*　画像のマスク　*/
+
+.mask{
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+}
+
+header h2 img   {
+    width:100%;/*ここを100％にしないとリンクの当たり判定がおかしくなる。サイズや位置はzoomInの方*/
+    height: auto;
+
+
+}
+
+.zoomIn{/*サイズや位置をいじるならここ*/
+    width: 750px;
+    margin: 0 auto;/*中央揃え*/
+    margin-left: 100px;
+    border: 5px solid #ff4500;/*画像に枠付け*/
+}
+
+body    {
+    background-image: url(back.png);
+    margin: 0;
+    
+
+
+}
+
+
+h1    {
+    color: white;
+    margin-left: 25px;
+}
+
+header h2 p    {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-left: 30px;
+    line-height:30px;/*行間指定*/
+
+}
+
+table ul {/*画像を横並びにする*/
+    display: flex;
+    justify-content: center;
+  }
+
